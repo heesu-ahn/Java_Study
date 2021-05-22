@@ -1,41 +1,24 @@
-package study;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+package DataStruct;
 
 public class main {
 
+	public static int [] sample = {6,9,8,3,4,5};
+	public static int [] sample2 = {11,20,18,3,7,15};
+	
 	public static void main(String[] args) {
-		
-		boolean _repeat = false;
-		
-		Process proc = new Process();
-		_repeat = true; 
-		
-		System.out.println(">>System Message : Please Input Data...");
-		
-		while(_repeat) {
-			
-			/* ReadData 
-			 * 입력값이 정수형인지 문자열인지 판단하는 기능 
-			 * 입력 값에 아무런 값도 입력이 되지 않았는지 판단하는 기능
-			 * */ 				
-			_repeat = proc.ReadData(); 
-			
-			
-			if(_repeat) {
-				System.out.println("\n>>System Message : Process Retry");
-				System.out.println("\n>>System Message : Please Input Data...");
-			} else {
-				System.out.println("\n>>System Message : Process Exit");
-			}
-			
-		}
-		
-		
-		
 
+		// 버블 정렬 예제
+		//sortSample sS = new sortSample();
+		//sS.getSample(sample);
+		//sS.BubbleSort();
+		
+		// 선택정렬 예제
+		sortSample sS2 = new sortSample();
+		sS2.getSample(sample2);
+		sS2.SelectSort();
+		
 	}
+	
+	
 
 }
